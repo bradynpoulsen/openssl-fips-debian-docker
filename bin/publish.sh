@@ -6,8 +6,8 @@ if [[ "$1" == "-h" || "$1" == "--help" || -z "$1" || -z "$2" ]]; then
 fi
 
 
-DATETIME_TAG=$(TZ="UTC" date +"%Y%m%d%H%m")
-DATETIME_MSG=$(TZ="UTC" date +"%d %B %Y %H:%m %Z")
+DATETIME_TAG=$(TZ="UTC" date +"%Y%m%d%H%M")
+DATETIME_MSG=$(TZ="UTC" date +"%d %B %Y %H:%M %Z")
 
 git tag \
   -m "OpenSSL Version: $1" \
